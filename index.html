@@ -61,14 +61,14 @@
           <h1 class="title is-1 publication-title">UniACT: Depth-Aware RGB Latent Action Learning for Vision-Language-Action Models</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://manishgovind.github.io">Manish Kumar Govind</a><sup>1</sup>,</span>
+              <a href="https://manishgovind.github.io">Manish Kumar Govind</a>,</span>
             <span class="author-block">
-              <a href="https://">Dominick Reily</a><sup>2</sup>,</span>
+              <a href="https://">Dominick Reily</a>,</span>
             <span class="author-block">
-              <a href="https://">Pu Wang</a><sup>2</sup>,
+              <a href="https://">Pu Wang</a>
             </span>
             <span class="author-block">
-              <a href="http://">Srijan Das</a><sup>2</sup>,
+              <a href="http://">Srijan Das</a>,
             </span>
           </div>
 
@@ -219,7 +219,7 @@
         <div class="content has-text-justified">
           <p>
             Latent action representations learned from unlabeled videos have recently emerged as a promising paradigm for pretraining vision-language-action (VLA) models without explicit robot action supervision. However, latent actions derived solely from RGB observations primarily encode appearance-driven dynamics and lack explicit 3D geometric structure, which is essential for precise and contact-rich manipulation. 
-            To address this limitation, we introduce UniAct, a transformer-based VLA model that incorporates geometric structure through depth-aware latent pretraining, enabling downstream policies to inherit stronger spatial priors. To facilitate this process, we propose \textsc{UniLARN}, a unified latent learning framework based on inverse and forward dynamics objectives that learns a shared embedding space for RGB and depth while explicitly modeling their cross-modal interactions. This formulation produces modality-specific and unified latent action representations that serve as pseudo-labels for the depth-aware pretraining of UniAct.
+            To address this limitation, we introduce UniAct, a transformer-based VLA model that incorporates geometric structure through depth-aware latent pretraining, enabling downstream policies to inherit stronger spatial priors. To facilitate this process, we propose UniLARN, a unified latent learning framework based on inverse and forward dynamics objectives that learns a shared embedding space for RGB and depth while explicitly modeling their cross-modal interactions. This formulation produces modality-specific and unified latent action representations that serve as pseudo-labels for the depth-aware pretraining of UniAct.
             Extensive experiments in both simulation and real-world settings demonstrate the effectiveness of unified latent action representations. UniAct consistently outperforms RGB-based latent action baselines under in-domain and out-of-domain pretraining regimes, as well as on both seen and unseen manipulation tasks.
             
           </p>
@@ -350,7 +350,7 @@
 
 
     <!-- Concurrent Work. -->
-    <div class="columns is-centered">
+    <!-- <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Related Links</h2>
 
@@ -373,7 +373,7 @@
           </p>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Concurrent Work. -->
 
   </div>
@@ -395,15 +395,7 @@
 
 <footer class="footer">
   <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
+
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
@@ -411,13 +403,6 @@
             This website is licensed under a <a rel="license"
                                                 href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
           </p>
         </div>
       </div>
