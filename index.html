@@ -58,7 +58,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">UniACT: Depth-Aware RGB Latent Action Learning for Vision-Language-Action Models</h1>
+          <h1 class="title is-1 publication-title">DiLACT: Depth-Aware RGB Latent Action Learning for Vision-Language-Action Models</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://manishgovind.github.io">Manish Kumar Govind</a>,</span>
@@ -219,7 +219,7 @@
         <div class="content has-text-justified">
           <p>
             Latent action representations learned from unlabeled videos have recently emerged as a promising paradigm for pretraining vision-language-action (VLA) models without explicit robot action supervision. However, latent actions derived solely from RGB observations primarily encode appearance-driven dynamics and lack explicit 3D geometric structure, which is essential for precise and contact-rich manipulation. 
-            To address this limitation, we introduce UniAct, a transformer-based VLA model that incorporates geometric structure through depth-aware latent pretraining, enabling downstream policies to inherit stronger spatial priors. To facilitate this process, we propose UniLARN, a unified latent learning framework based on inverse and forward dynamics objectives that learns a shared embedding space for RGB and depth while explicitly modeling their cross-modal interactions. This formulation produces modality-specific and unified latent action representations that serve as pseudo-labels for the depth-aware pretraining of UniAct.
+            To address this limitation, we introduce DiLACT, a transformer-based VLA model that incorporates geometric structure through depth-aware latent pretraining, enabling downstream policies to inherit stronger spatial priors. To facilitate this process, we propose DiLAR, a unified latent learning framework based on inverse and forward dynamics objectives that learns a shared embedding space for RGB and depth while explicitly modeling their cross-modal interactions. This formulation produces modality-specific and unified latent action representations that serve as pseudo-labels for the depth-aware pretraining of DiLACT.
             Extensive experiments in both simulation and real-world settings demonstrate the effectiveness of unified latent action representations. UniAct consistently outperforms RGB-based latent action baselines under in-domain and out-of-domain pretraining regimes, as well as on both seen and unseen manipulation tasks.
             
           </p>
