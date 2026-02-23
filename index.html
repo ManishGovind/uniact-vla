@@ -70,7 +70,7 @@
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block">University of North Carolina at Charlotte,</span>
+            <span class="author-block">University of North Carolina at Charlotte</span>
           </div>
 
           <div class="column has-text-centered">
@@ -172,7 +172,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Latent action representations learned from unlabeled videos have recently emerged as a promising paradigm for pretraining vision-language-action (VLA) models without explicit robot action supervision. However, latent actions derived solely from RGB observations primarily encode appearance-driven dynamics and lack explicit 3D geometric structure, which is essential for precise and contact-rich manipulation. 
+            Latent action representations learned from unlabeled videos have recently emerged as a promising paradigm for pretraining vision-language-action(VLA) models without explicit robot action supervision. However, latent actions derived solely from RGB observations primarily encode appearance-driven dynamics and lack explicit 3D geometric structure, which is essential for precise and contact-rich manipulation. 
             To address this limitation, we introduce UniLACT, a transformer-based VLA model that incorporates geometric structure through depth-aware latent pretraining, enabling downstream policies to inherit stronger spatial priors. To facilitate this process, we propose UniLARN, a unified latent action learning framework based on inverse and forward dynamics objectives that learns a shared embedding space for RGB and depth while explicitly modeling their cross-modal interactions. This formulation produces modality-specific and unified latent action representations that serve as pseudo-labels for the depth-aware pretraining of UniLACT.
             Extensive experiments in both simulation and real-world settings demonstrate the effectiveness of unified latent action representations. UniLACT consistently outperforms RGB-based latent action baselines under in-domain and out-of-domain pretraining regimes, as well as on both seen and unseen manipulation tasks.
           </p>
@@ -210,7 +210,108 @@
   </div>
 </div>
 
+<div class="container is-max-desktop">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">CALVIN Benchmark Results</h2>
+
+      <div class="content">
+        <figure class="image" style="overflow:hidden; border-radius: 14px;">
+          <img
+            src="./static/images/Calvin-results.png"
+            alt="CALVIN results"
+            style="width: 100%; height: auto; display:block;"
+          >
+        </figure>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
 </section>
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h3 class="title is-4">
+          Rollout Videos: Qualitative Results on Unseen CALVIN-D (Moto: RGB Latent Actions vs. UniLACT).
+        </h3>
+          <div class="columns is-vcentered interpolation-panel">
+            <div class="column  has-text-centered">
+              <h5><b>Moto:</b><br>Pull the handle to open the drawer</h5>
+              <h5 style="font-size:30px;">✅</h5>
+              <img autoplay="" controls="" muted="" loop="" playsinline="" width="40%" 
+              src="static/videos/4-0-moto-open_drawer-succ.gif">
+            </img>
+            </div>
+            <div class="column  has-text-centered">
+              <h5><b>UniLACT:</b><br>Pull the handle to open the drawer</h5>
+              <h5 style="font-size:30px;">✅</h5>
+              <img autoplay="" controls="" muted="" loop="" playsinline="" width="40%" 
+              src="static/videos/4-0-unilact-open_drawer-succ.gif">
+            </img>
+            </div>
+          </div>
+          <div class="columns is-vcentered interpolation-panel">
+            <div class="column  has-text-centered">
+              <h5><b>Moto:</b><br>Press the button to turn on the led light</h5>
+              <h5 style="font-size:30px;">❌</h5>
+              <img autoplay="" controls="" muted="" loop="" playsinline="" width="40%"
+               src="static/videos/23-0-moto-turn_on_led-fail.gif" >
+            </img>
+            </div>
+            <div class="column  has-text-centered">
+              <h5><b>UniLACT:</b><br>Press the button to turn on the led light</h5>
+              <h5 style="font-size:30px;">✅</h5>
+              <img autoplay="" controls="" muted="" loop="" playsinline="" width="40%" 
+              src="static/videos/23-0-unilact-turn_on_led-succ.gif">
+            </img>
+            </div>
+          </div>
+          <div class="columns is-vcentered interpolation-panel">
+            <div class="column  has-text-centered">
+              <h5><b>Moto:</b><br>Store the grasped block in the sliding cabinet</h5>
+              <h5 style="font-size:30px;">❌</h5>
+              <img autoplay="" controls="" muted="" loop="" playsinline="" width="40%" 
+              src="static/videos/3-2-moto_place_in_slider-fail.gif">
+              </img>
+            </div>
+            <div class="column  has-text-centered">
+              <h5><b>UniLACT:</b><br>Store the grasped block in the sliding cabinet</h5>
+              <h5 style="font-size:30px;">✅</h5>
+              <img autoplay="" controls="" muted="" loop="" playsinline="" width="40%" 
+              src="static/videos/3-2-unilact-place_in_slider-succ.gif">
+              </img>
+            </div>
+          </div>
+          <div class="columns is-vcentered interpolation-panel">
+            <div class="column has-text-centered">
+              <h5><b>Moto:</b>Use the switch to turn off the light bulb</h5>
+              <h5 style="font-size:30px;">❌</h5>
+              <img src="static/videos/36-1-moto-turn_off_lightbulb-fail.gif"
+                   alt="Moto failure"
+                   style="width:40%; height:auto; display:block; margin:0 auto; border-radius:12px;">
+            </div>
+          
+            <div class="column has-text-centered">
+              <h5><b>UniLACT:</b>Use the switch to turn off the light bulb</h5>
+              <h5 style="font-size:30px;">✅</h5>
+              <img src="static/videos/36-1-unilact-turn_off_lightbulb-succ.gif"
+                   alt="UniLACT success"
+                   style="width:40%; height:auto; display:block; margin:0 auto; border-radius:12px;">
+            </div>
+          </div>
+
+          
+
+
+      </div>
+    </div>
+</div></section>
+
 
 
 
@@ -239,9 +340,7 @@
       <div class="column is-8">
         <div class="content">
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+            Website template borrowed from NeRFies<a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>.
           </p>
         </div>
       </div>
