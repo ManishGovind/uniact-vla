@@ -185,6 +185,7 @@
   <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
       <h2 class="title is-3">Method Overview</h2>
+      
 
       <div class="content">
         <!-- Top figure -->
@@ -206,6 +207,9 @@
         </figure>
       </div>
 
+      <p><p>
+        We introduce <b>UniLACT</b>, a transformer-based Vision–Language–Action model that injects geometric structure into latent action representations. Our method mainly involves three-stage training pipeline. (1) <b>Unified latent action learning(UniLARN)</b>: we use <b>UniLARN</b> to learn modality-specific latent actions from RGB and depth, along with a unified latent space that captures cross-modal interactions. (2) <b>Unified latent pretraining</b>: UniLACT is pretrained to predict these modality-specific and unified latent actions, providing supervision without explicit robot action annotations. (3) <b>Action fine-tuning</b>: UniLACT is then fine-tuned on robot demonstrations to map predicted unified latent actions to executable control policies.
+      </p></p>
     </div>
   </div>
 </div>
@@ -213,7 +217,7 @@
 <div class="container is-max-desktop">
   <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
-      <h2 class="title is-3">CALVIN Benchmark Results</h2>
+      <h2 class="title is-3">CALVIN Experiments</h2>
 
       <div class="content">
         <figure class="image" style="overflow:hidden; border-radius: 14px;">
@@ -231,13 +235,15 @@
 
 
 
+
+
 </section>
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h3 class="title is-4">
-          Rollout Videos: Qualitative Results on Unseen CALVIN-D (Moto: RGB Latent Actions vs. UniLACT).
+          Rollout Videos: Qualitative Results on Unseen CALVIN-D (Moto: RGB-based Latent Action model vs. UniLACT).
         </h3>
           <div class="columns is-vcentered interpolation-panel">
             <div class="column  has-text-centered">
@@ -305,12 +311,11 @@
             </div>
           </div>
 
-          
-
-
       </div>
     </div>
 </div></section>
+
+
 
 
 
