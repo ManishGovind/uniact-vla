@@ -8,6 +8,9 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
+    document.querySelectorAll("video").forEach(v => v.playbackRate = 20);
+  </script>
+  <script>
     window.dataLayer = window.dataLayer || [];
 
     function gtag() {
@@ -238,14 +241,14 @@
 
 
 </section>
-<section class="section">
+<!-- <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h3 class="title is-4">
           Rollout Videos: Qualitative Results on Unseen CALVIN-D (Moto: RGB-based Latent Action model vs. UniLACT).
         </h3>
-          <div class="columns is-vcentered interpolation-panel">
+        <div class="columns is-vcentered interpolation-panel is-multiline" style="margin-top: 1.25rem;">
             <div class="column  has-text-centered">
               <h5><b>Moto:</b><br>Pull the handle to open the drawer</h5>
               <h5 style="font-size:30px;">✅</h5>
@@ -310,15 +313,220 @@
                    style="width:40%; height:auto; display:block; margin:0 auto; border-radius:12px;">
             </div>
           </div>
+      </div>
+    </div>
+</div></section> -->
+
+
+
+
+<section class="section" id="calvin-rollouts">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+
+        <h3 class="title is-4">
+          Qualitative Comparison on CALVIN Tasks (Moto vs. UniLACT)
+        </h3>
+
+        <!-- Example 1 -->
+        <div class="columns is-vcentered interpolation-panel is-multiline" style="margin-top: 1.25rem;">
+          <div class="column has-text-centered is-6">
+            <h5><b>Moto</b></h5>
+            <h5 style="font-size:30px;">✅</h5>
+            <img autoplay controls muted loop playsinline width="50%" src="static/videos/4-0-moto-open_drawer-succ.gif" 
+          </img>
+          </div>
+          <div class="column has-text-centered is-6">
+            <h5><b>UniLACT</b></h5>
+            <h5 style="font-size:30px;">✅</h5>
+            <img autoplay controls muted loop playsinline width="50%" src="static/videos/4-0-unilact-open_drawer-succ.gif" 
+            </img>
+          </div>
+          <div class="column is-12 has-text-centered">
+            <h5 style="line-height:1.25; margin-top: 0.25rem;">
+              <b>Task:</b> Pull the handle to open the drawer</h5>
+            </h5>
+          </div>
+        </div>
+
+        <!-- Example 2 -->
+        <div class="columns is-vcentered interpolation-panel is-multiline" style="margin-top: 1.25rem;">
+          <div class="column has-text-centered is-6">
+            <h5><b>Moto</b></h5>
+            <h5 style="font-size:30px;">❌</h5>
+            <img autoplay controls muted loop playsinline width="50%" src="static/videos/23-0-moto-turn_on_led-fail.gif" 
+            </img>
+          </div>
+          <div class="column has-text-centered is-6">
+            <h5><b>UniLACT</b></h5>
+            <h5 style="font-size:30px;">✅</h5>
+            <img autoplay controls muted loop playsinline width="50%"  src="static/videos/23-0-unilact-turn_on_led-succ.gif" >
+            </img>
+          </div>
+          <div class="column is-12 has-text-centered">
+            <h5 style="line-height:1.25; margin-top: 0.25rem;">
+              <b>Task:</b> Press the button to turn on the led light
+            </h5>
+          </div>
+        </div>
+
+        <!-- Example 3 -->
+        <div class="columns is-vcentered interpolation-panel is-multiline" style="margin-top: 1.25rem;">
+          <div class="column has-text-centered is-6">
+            <h5><b>Moto</b></h5>
+            <h5 style="font-size:30px;">❌</h5>
+            <img autoplay controls muted loop playsinline width="50%"  src="static/videos/3-2-moto_place_in_slider-fail.gif" 
+          </img>
+          </div>
+          <div class="column has-text-centered is-6">
+            <h5><b>UniLACT</b></h5>
+            <h5 style="font-size:30px;">✅</h5>
+            <img autoplay controls muted loop playsinline width="50%"
+              <source src="static/videos/3-2-unilact-place_in_slider-succ.gif" 
+          </img>
+          </div>
+          <div class="column is-12 has-text-centered">
+            <h5 style="line-height:1.25; margin-top: 0.25rem;">
+              <b>Task:</b> Store the grasped block in the sliding cabinet
+            </h5>
+          </div>
+        </div>
+
+        <!-- Example 4 -->
+        <div class="columns is-vcentered interpolation-panel is-multiline" style="margin-top: 1.25rem;">
+          <div class="column has-text-centered is-6">
+            <h5><b>Moto</b></h5>
+            <h5 style="font-size:30px;">❌</h5>
+            <img autoplay  muted loop playsinline width="50%" src="static/videos/36-1-moto-turn_off_lightbulb-fail.gif" 
+            </img>
+          </div>
+          <div class="column has-text-centered is-6">
+            <h5><b>UniLACT</b></h5>
+            <h5 style="font-size:30px;">✅</h5>
+            <img autoplay  muted loop playsinline width="50%" src="static/videos/36-1-unilact-turn_off_lightbulb-succ.gif"
+          </img>
+          </div>
+          <div class="column is-12 has-text-centered">
+            <h5 style="line-height:1.25; margin-top: 0.25rem;">
+              <b>Task:</b> Use the switch to turn off the light bulb
+            </h5>
+          </div>
+        </div>
 
       </div>
     </div>
-</div></section>
+  </div>
+</section>
 
 
 
+<section class="section" id="realworld-rollouts">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
 
+        <h2 class="title is-3">Real-World Experiments</h2>
+        <h3 class="title is-4">
+          Qualitative Comparison on Real-World Tasks (Moto vs. UniLACT)
+        </h3>
 
+        <!-- Example 1 -->
+        <div class="columns is-vcentered interpolation-panel is-multiline" style="margin-top: 1.25rem;">
+          <div class="column has-text-centered is-6">
+            <h5><b>Moto</b></h5>
+            <h5 style="font-size:30px;">✅</h5>
+            <video autoplay controls  muted loop playsinline width="50%">
+              <source src="static/videos/moto_pick_place_success2x.mp4" type="video/mp4">
+          </video>
+          </div>
+          <div class="column has-text-centered is-6">
+            <h5><b>UniLACT</b></h5>
+            <h5 style="font-size:30px;">✅</h5>
+            <video autoplay controls muted loop playsinline width="50%">
+              <source src="static/videos/unilact_pick_place_success-62x.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="column is-12 has-text-centered">
+            <h5 style="line-height:1.25; margin-top: 0.25rem;">
+              <b>Task:</b> Pick up the carrot and place it in a bowl.
+            </h5>
+          </div>
+        </div>
+
+        <!-- Example 2 -->
+        <div class="columns is-vcentered interpolation-panel is-multiline" style="margin-top: 1.25rem;">
+          <div class="column has-text-centered is-6">
+            <h5><b>Moto</b></h5>
+            <h5 style="font-size:30px;">❌</h5>
+            <video autoplay controls muted loop playsinline width="50%">
+              <source src="static/videos/moto_pick_place_fail2x.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="column has-text-centered is-6">
+            <h5><b>UniLACT</b></h5>
+            <h5 style="font-size:30px;">✅</h5>
+            <video autoplay  controls muted loop playsinline width="50%">
+              <source src="static/videos/unilact_pick_place_suceess2x.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="column is-12 has-text-centered">
+            <h5 style="line-height:1.25; margin-top: 0.25rem;">
+              <b>Task:</b> Pick up the carrot and place it in a bowl.
+            </h5>
+          </div>
+        </div>
+
+        <!-- Example 3 -->
+        <div class="columns is-vcentered interpolation-panel is-multiline" style="margin-top: 1.25rem;">
+          <div class="column has-text-centered is-6">
+            <h5><b>Moto</b></h5>
+            <h5 style="font-size:30px;">❌</h5>
+            <video autoplay controls muted loop playsinline width="50%">
+              <source src="static/videos/moto_move_near_fail2x.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="column has-text-centered is-6">
+            <h5><b>UniLACT</b></h5>
+            <h5 style="font-size:30px;">✅</h5>
+            <video autoplay controls  muted loop playsinline width="50%">
+              <source src="static/videos/unilact_move_near_success2x.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="column is-12 has-text-centered">
+            <h5 style="line-height:1.25; margin-top: 0.25rem;">
+              <b>Task:</b> Move eggplant near banana
+            </h5>
+          </div>
+        </div>
+
+        <!-- Example 4 -->
+        <!-- <div class="columns is-vcentered interpolation-panel is-multiline" style="margin-top: 1.25rem;">
+          <div class="column has-text-centered is-6">
+            <h5><b>Moto</b></h5>
+            <h5 style="font-size:30px;">❌</h5>
+            <video autoplay controls muted loop playsinline width="50%">
+              <source src="static/videos/real/moto_ex4.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="column has-text-centered is-6">
+            <h5><b>UniLACT</b></h5>
+            <h5 style="font-size:30px;">✅</h5>
+            <video autoplay controls muted loop playsinline width="50%">
+              <source src="static/videos/real/unilact_ex4.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="column is-12 has-text-centered">
+            <h5 style="line-height:1.25; margin-top: 0.25rem;">
+              <b>Task:</b> 
+            </h5>
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
