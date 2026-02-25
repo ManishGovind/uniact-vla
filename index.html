@@ -58,17 +58,20 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">UniLACT: Depth-Aware RGB Latent Action Learning for Vision-Language-Action Models</h1>
+          <h2 class="title is-1 publication-title">
+            UniLACT: Depth-Aware RGB Latent Action Learning
+            for Vision-Language-Action Models
+          </h2>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://manishgovind.github.io">Manish Kumar Govind</a>,</span>
             <span class="author-block">
-              <a href="https://">Dominick Reily</a>,</span>
+              <a href="https://dominickrei.github.io/">Dominick Reily</a>,</span>
             <span class="author-block">
-              <a href="https://">Pu Wang</a>,
+              <a href="https://webpages.charlotte.edu/pwang13/">Pu Wang</a>,
             </span>
             <span class="author-block">
-              <a href="http://">Srijan Das</a>
+              <a href="https://srijandas07.github.io/">Srijan Das</a>
             </span>
           </div>
 
@@ -231,92 +234,16 @@
           >
         </figure>
       </div>
+      <p>
+        We evaluate <b>UniLACT</b> on the CALVIN simulation benchmark in the unseen D environment and compare it against various language-conditioned action policies.
+        <b>UniLACT</b> consistently outperforms the RGB latent-action method Moto under both in-domain and out-of-domain pretraining settings.
+        These results highlight the benefit of depth-aware unified latent action representations for precise grasping and manipulation.
+      </p>
 
     </div>
   </div>
 </div>
-
-
-
-
-
 </section>
-<!-- <section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h3 class="title is-4">
-          Rollout Videos: Qualitative Results on Unseen CALVIN-D (Moto: RGB-based Latent Action model vs. UniLACT).
-        </h3>
-        <div class="columns is-vcentered interpolation-panel is-multiline" style="margin-top: 1.25rem;">
-            <div class="column  has-text-centered">
-              <h5><b>Moto:</b><br>Pull the handle to open the drawer</h5>
-              <h5 style="font-size:30px;">✅</h5>
-              <img autoplay="" controls="" muted="" loop="" playsinline="" width="40%" 
-              src="static/videos/4-0-moto-open_drawer-succ.gif">
-            </img>
-            </div>
-            <div class="column  has-text-centered">
-              <h5><b>UniLACT:</b><br>Pull the handle to open the drawer</h5>
-              <h5 style="font-size:30px;">✅</h5>
-              <img autoplay="" controls="" muted="" loop="" playsinline="" width="40%" 
-              src="static/videos/4-0-unilact-open_drawer-succ.gif">
-            </img>
-            </div>
-          </div>
-          <div class="columns is-vcentered interpolation-panel">
-            <div class="column  has-text-centered">
-              <h5><b>Moto:</b><br>Press the button to turn on the led light</h5>
-              <h5 style="font-size:30px;">❌</h5>
-              <img autoplay="" controls="" muted="" loop="" playsinline="" width="40%"
-               src="static/videos/23-0-moto-turn_on_led-fail.gif" >
-            </img>
-            </div>
-            <div class="column  has-text-centered">
-              <h5><b>UniLACT:</b><br>Press the button to turn on the led light</h5>
-              <h5 style="font-size:30px;">✅</h5>
-              <img autoplay="" controls="" muted="" loop="" playsinline="" width="40%" 
-              src="static/videos/23-0-unilact-turn_on_led-succ.gif">
-            </img>
-            </div>
-          </div>
-          <div class="columns is-vcentered interpolation-panel">
-            <div class="column  has-text-centered">
-              <h5><b>Moto:</b><br>Store the grasped block in the sliding cabinet</h5>
-              <h5 style="font-size:30px;">❌</h5>
-              <img autoplay="" controls="" muted="" loop="" playsinline="" width="40%" 
-              src="static/videos/3-2-moto_place_in_slider-fail.gif">
-              </img>
-            </div>
-            <div class="column  has-text-centered">
-              <h5><b>UniLACT:</b><br>Store the grasped block in the sliding cabinet</h5>
-              <h5 style="font-size:30px;">✅</h5>
-              <img autoplay="" controls="" muted="" loop="" playsinline="" width="40%" 
-              src="static/videos/3-2-unilact-place_in_slider-succ.gif">
-              </img>
-            </div>
-          </div>
-          <div class="columns is-vcentered interpolation-panel">
-            <div class="column has-text-centered">
-              <h5><b>Moto:</b>Use the switch to turn off the light bulb</h5>
-              <h5 style="font-size:30px;">❌</h5>
-              <img src="static/videos/36-1-moto-turn_off_lightbulb-fail.gif"
-                   alt="Moto failure"
-                   style="width:40%; height:auto; display:block; margin:0 auto; border-radius:12px;">
-            </div>
-          
-            <div class="column has-text-centered">
-              <h5><b>UniLACT:</b>Use the switch to turn off the light bulb</h5>
-              <h5 style="font-size:30px;">✅</h5>
-              <img src="static/videos/36-1-unilact-turn_off_lightbulb-succ.gif"
-                   alt="UniLACT success"
-                   style="width:40%; height:auto; display:block; margin:0 auto; border-radius:12px;">
-            </div>
-          </div>
-      </div>
-    </div>
-</div></section> -->
-
 
 
 
@@ -325,8 +252,9 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
 
-        <h3 class="title is-4">
-          Qualitative Comparison on CALVIN Tasks (Moto vs. UniLACT)
+      
+        <h3 class="title is-4" style="margin-top: 2rem;">
+          Rollout Videos: Moto (RGB Latents) vs. UniLACT (RGB+Depth Latents)
         </h3>
 
         <!-- Example 1 -->
@@ -435,7 +363,7 @@
                 <figure class="image" style="overflow:hidden; border-radius: 14px;">
                   <img
                     src="./static/images/real-world-results.png"
-                    alt="CALVIN results"
+                    alt="realworld results"
                     style="width: 100%; height: auto; display:block;"
                   >
                 </figure>
@@ -449,10 +377,10 @@
           </div>
         </div>
           
-        <h3 class="title is-4">
-          Qualitative Comparison on Real-World Tasks (Moto vs. UniLACT)
+      
+        <h3 class="title is-4" style="margin-top: 2rem;">
+          Rollout Videos: Moto (RGB Latents) vs. UniLACT (RGB+Depth Latents)
         </h3>
-
 
         <!-- Example 1 -->
         <div class="columns is-vcentered interpolation-panel is-multiline" style="margin-top: 1.25rem;">
